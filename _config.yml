@@ -12,11 +12,10 @@ markdown: kramdown
 highlighter: rouge
 paginate: 5
 language: en-uk
-name: Finding The Way Home
-description: A beautiful narrative written with the world's most elegant publishing
-  platform. The story begins here.
-author: Casper McFadden
-nickname: casper
+name: Lucia´s blog
+description: this is a blog were lucia is writting some beautiful content.
+author: Lucia Cardenas
+nickname: luciacardenas
 bio: A paranormal expert and his daughter bunk in an abandoned house populated by
   3 mischievous ghosts and one friendly one.
 location: Maine, USA
