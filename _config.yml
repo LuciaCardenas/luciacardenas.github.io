@@ -1,29 +1,32 @@
-# Jykell configuration
-#markdown: redcarpet
-#highlighter: pygments
+---
+title: Luciacardenas.Github.Io
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 markdown: kramdown
 highlighter: rouge
 paginate: 5
-language: 'en-uk'
-
-# Website info
-name: 'Finding The Way Home'
-description: "A beautiful narrative written with the world's most elegant publishing platform. The story begins here."
-
-# Author's info
-author: 'Casper McFadden'
-# edit 'categories' in the front matter of every post to match this username
+language: en-uk
+name: Finding The Way Home
+description: A beautiful narrative written with the world's most elegant publishing
+  platform. The story begins here.
+author: Casper McFadden
 nickname: casper
-bio: 'A paranormal expert and his daughter bunk in an abandoned house populated by 3 mischievous ghosts and one friendly one.'
-location: 'Maine, USA'
-url: 'http://luciacardenas.github.io'
-image: 'assets/images/casper.png'
-
-#short_url: 'biomadeira.github.io/jasper/'
+bio: A paranormal expert and his daughter bunk in an abandoned house populated by
+  3 mischievous ghosts and one friendly one.
+location: Maine, USA
+url: http://luciacardenas.github.io
+image: assets/images/casper.png
 google_analytics: UA-69281367-1
 disqus: username
+<<<<<<< HEAD
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-#baseurl: /jasper/
+baseurl: /
 
 # Permalinks
 permalink: /:title
@@ -54,22 +57,26 @@ exclude: [vendor]
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
+=======
+permalink: "/:title"
+gems:
+- jekyll-paginate
+exclude:
+- README.md
+- Rakefile
+- Gemfile
+- Gemfile.lock
+- changelog.md
+- "*.Rmd"
+- vendor
+- ".travis.yml"
+>>>>>>> fad7457516d1c8ad6f4a8896f30e92fc0384d295
 safe: false
 lsi: false
 username: biomadeira
 repo: jasper
 branch: master
-relative_source: ../jasper/
-destination: ../jasper-pages/
-production_url:  https://biomadeira.github.io/jasper/
-source_url:      https://github.com/biomadeira/jasper/
-
-exclude:
-  - README.md
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
+relative_source: "../jasper/"
+destination: "../jasper-pages/"
+production_url: https://biomadeira.github.io/jasper/
+source_url: https://github.com/biomadeira/jasper/

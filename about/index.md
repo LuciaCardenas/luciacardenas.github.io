@@ -1,9 +1,9 @@
 ---
-layout: page
 title: About
-class: 'post'
-navigation: True
-logo: 'assets/images/ghost.png'
+layout: page
+class: post
+navigation: true
+logo: assets/images/ghost.png
 current: about
 ---
 

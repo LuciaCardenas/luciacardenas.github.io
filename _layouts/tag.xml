@@ -1,7 +1,8 @@
 ---
-layout: atom
 title: nil
+layout: atom
 ---
+
 {% for post in page.posts %}
 	<item>
 	  <title>{{ post.title }}</title>
