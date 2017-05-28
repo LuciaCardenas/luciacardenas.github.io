@@ -24,8 +24,7 @@ url: http://luciacardenas.github.io
 image: assets/images/casper.png
 google_analytics: UA-69281367-1
 disqus: username
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: /
 
@@ -58,9 +57,6 @@ exclude: [vendor]
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-=======
-=======
->>>>>>> fad7457516d1c8ad6f4a8896f30e92fc0384d295
 permalink: "/:title"
 gems:
 - jekyll-paginate
@@ -73,10 +69,6 @@ exclude:
 - "*.Rmd"
 - vendor
 - ".travis.yml"
-<<<<<<< HEAD
->>>>>>> fad7457516d1c8ad6f4a8896f30e92fc0384d295
-=======
->>>>>>> fad7457516d1c8ad6f4a8896f30e92fc0384d295
 safe: false
 lsi: false
 username: biomadeira
