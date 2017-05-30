@@ -16,21 +16,20 @@ name: Lucia´s blog
 description: this is a blog were lucia is writting some beautiful content.
 author: Lucia Cardenas
 nickname: luciacardenas
-bio: A paranormal expert and his daughter bunk in an abandoned house populated by
-  3 mischievous ghosts and one friendly one.
-location: Maine, USA
+bio: A paranormal expert and his daughter bunk in an abandoned house populated by mischievous ghosts and one friendly one.
+location: Paris, France
 url: http://luciacardenas.github.io
-image: assets/images/casper.png
+image: /assets/images/casper.png
 google_analytics: UA-69281367-1
 disqus: username
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl: ""
 
 # Permalinks
-permalink: /:title
-# permalink: /author/:username
-# permalink: /tag/:tag
+# permalink: /:title
+defaults:
+    - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:title'}}
 
 
 # gems and other configs
@@ -56,24 +55,12 @@ exclude: [vendor]
 # repo defaults to USERNAME.github.io
 # Branch defaults to "source" for USERNAME.github.io
 # or "master" otherwise
-permalink: "/:title"
 gems:
-- jekyll-paginate
+  - jekyll-paginate
+  - jekyll-sitemap
 exclude:
-- README.md
-- Rakefile
-- Gemfile
-- Gemfile.lock
-- changelog.md
-- "*.Rmd"
-- vendor
-- ".travis.yml"
-safe: false
-lsi: false
-username: biomadeira
-repo: jasper
-branch: master
-relative_source: "../jasper/"
-destination: "../jasper-pages/"
-production_url: https://biomadeira.github.io/jasper/
-source_url: https://github.com/biomadeira/jasper/
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - "*.Rmd"

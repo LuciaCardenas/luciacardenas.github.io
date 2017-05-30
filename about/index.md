@@ -1,10 +1,11 @@
 ---
-title: About
+title: About le
 layout: page
-class: post
 navigation: true
-logo: assets/images/ghost.png
+logo: /assets/images/ghost.png
+cover: /assets/images/cover2.jpg
 current: about
+
 ---
 
 This is a demo blog for Ghost, it contains dummy content which allows you to click around and see what a Ghost blog running the default theme looks like.
