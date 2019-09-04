@@ -23,7 +23,7 @@
     <div class="navbar-end">
       {% for language in site.data.lang %}
       <div class="navbar-item is-hoverable">
-        <a class="navbar-link" href="/{% if language[0] != 'en' %}{{ language[0] }}{% endif %}">
+        <a class="navbar-link" href="/{% if language[0] != 'en' %}{{ site.baseurl | append: language[0] }}{% endif %}">
           {{ language[1].icon }} {{ language[0] }} 
         </a>
       </div>
