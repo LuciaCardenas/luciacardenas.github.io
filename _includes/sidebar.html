@@ -11,7 +11,7 @@
     tabindex="0"></amp-img>
 
     {% for language in site.data.lang %}
-      <a class="navbar-item is-link" href="/{% if language[0] != 'en' %}{{ site.baseurl | append: language[0] }}{% endif %}">
+      <a class="navbar-item is-link" href="/{% if language[0] != 'en' %}{{ language[0] }}{% endif %}">
         {{ language[1].icon }} {{ language[1].label }} 
       </a>
     {% endfor %}
