@@ -1,0 +1,23 @@
+{% include sidebar.html %}
+<nav class="navbar is-fixed-top">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <amp-img src="{{ site.baseurl | append:'/assets/img/lucia.jpg'}}" 
+               alt="{{ site.title }}"
+               width="30" height="30"></amp-img>
+    </a>
+    <div class="navbar-item" style="flex-grow: 1; justify-content: center;">
+      <a class="button is-info is-rounded is-hidden-desktop">Contact me</a>
+    </div>
+
+    <a class="navbar-burger burger" on='tap:sidebar.toggle' 
+       data-target="navbarExampleTransparentExample">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <div id="navbarExampleTransparentExample" class="navbar-menu">
+  </div>
+</nav>
