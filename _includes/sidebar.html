@@ -10,9 +10,9 @@
     role="button"
     tabindex="0"></amp-img>
 
-  {% for page in site.pages %}
-    {% if page.title and page.navigation %}
-    <a class="navbar-item is-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-    {% endif %}
-  {% endfor %}
+    {% for language in site.data.lang %}
+      <a class="navbar-item is-link" href="/{% if language[0] != 'en' %}{{ language[0] }}{% endif %}">
+        {{ language[1].icon }} {{ language[1].label }} 
+      </a>
+    {% endfor %}
 </amp-sidebar>

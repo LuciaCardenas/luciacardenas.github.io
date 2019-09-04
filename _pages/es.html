@@ -1,0 +1,162 @@
+---
+permalink: /es
+---
+
+<html ⚡ lang="es">
+  <link rel="alternate" href="{{ site.baseurl }}" hreflang="en" />
+  {% include head.html %}
+  <body class="has-navbar-fixed-top">
+    {% include header.html %}
+
+    <section>
+      <div class="container is-fluid is-widescreen">
+        <amp-img src="{{ site.baseurl | append:'/assets/img/bandeau.svg'}}" 
+                 alt="{{ site.title }}"
+                 layout="responsive"
+                 width="100" height="5"></amp-img>
+      </div>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body is-centered">
+        <div class="container">
+          <div class="columns is-mobile is-horizontal-center">
+            <div class="column is-3-desktop is-6-mobile">
+              <center>
+                <amp-img src="{{ site.baseurl | append:'/assets/img/lucia.webp'}}" 
+                         alt="{{ site.title }}"
+                         class="border-image"
+                         layout="intrinsic"
+                         width="250" height="250"></amp-img>
+              </center>
+            </div>
+            <div class="column is-3-desktop is-6-mobile has-text-centered">
+              <p class="has-text-info is-size-3 is-uppercase">
+                Lucia
+              </p>
+              <p class="has-text-info has-text-weight-bold is-size-4 is-uppercase">
+                Cardenas Melgarejo
+              </p>
+              <h2 class="subtitle">
+                {{ site. description }}
+              </h2>
+              <a class="button is-info is-rounded" href="#contact_me">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="hero is-warning is-medium">
+      <div class="hero-body">
+        <div class="container" id="last_articles">
+          <h2 class="title">Hola !</h2>
+          <p>
+            My name is Lucia Cardenas Melgarejo and I help national and
+            international business to reach their full growth potential and improve
+            their marketing strategies. Skilled with +7 years, I have been Digital
+            Marketing Manager, Community Leader and Facilitator. I have as well
+            extensive experience in education projects
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns is-mobile is-multiline is-horizontal-center is-centered">
+
+          <div class="column is-4-desktop is-12-mobile has-text-centered">
+            <amp-img src="/assets/img/growth.svg" 
+                     alt="growth"
+                     width="150" height="150"></amp-img>
+                   <br></br>
+                   <div class="title">
+                     Growth and Marketing
+                   </div>
+                   <p>
+                     Define the KPIs and Growth Strategies
+                     Execute acquisition actions to reach your goals (Google Ads, Facebook
+                     Ads, Emailing, Landing Pages, AB Tests)
+                   </p>
+          </div>
+
+          <div class="column is-4-desktop is-12-mobile has-text-centered">
+            <amp-img src="/assets/img/event.svg" 
+                     alt="event"
+                     width="150" height="150"></amp-img>
+                   <br></br>
+                   <div class="title">
+                     Event Management and Facilitation
+                   </div>
+                   <p>
+                     Design and execute an event strategy to create business opportunities
+                     and build your community
+                   </p>
+          </div>
+
+          <div class="column is-4-desktop is-12-mobile has-text-centered">
+            <center>
+              <amp-img src="/assets/img/education.svg" 
+                       alt="education"
+                       width="150" height="150"></amp-img>
+            </center>
+            <br></br>
+            <div class="title">
+              Education Projects
+            </div>
+            <p>
+              Create personalized learning experiences and workshops
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-info" id="contact_me">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Ready to improve your marketing</h2>
+
+          <form action-xhr="https://formspree.io/felipebrokate@gmail.com"  method="POST">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control is-fullwidth">
+                <input class="input" type="text" placeholder="Name"  name="name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Mail</label>
+              <div class="control is-expanded">
+                <input class="input" type="text" placeholder="name@example.tld" name="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control is-expanded">
+                <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control is-expanded">
+                <center>
+                  <input class="button has-text-white is-rounded" type="submit" value="Send">
+                </center>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -19,5 +19,15 @@
   </div>
 
   <div id="navbarExampleTransparentExample" class="navbar-menu">
+    <div class="navbar-end">
+      {% for language in site.data.lang %}
+      <div class="navbar-item is-hoverable">
+        <a class="navbar-link" href="/{% if language[0] != 'en' %}{{ language[0] }}{% endif %}">
+          {{ language[1].icon }} {{ language[0] }} 
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+
   </div>
 </nav>
