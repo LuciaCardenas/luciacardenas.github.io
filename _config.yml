@@ -8,7 +8,7 @@ url: "https://luciacardenas.github.io" # the base hostname & protocol for your s
 # Needed by jekyll-seo-tag
 twitter: 
   username: Cardenas_Lu
-logo: '/assets/img/lucia.webp' 
+logo: '/assets/img/lucia-lion.jpg' 
 linkedin_username:  luciacardenasmelgarejo
 github_username:  luciacardenas
 
@@ -42,5 +42,5 @@ include:
   - _pages
 
 defaults:
-    - {scope: {path: "", layout: default, type: "pages"}, values: {image: '/assets/img/lucia.webp'}}
+    - {scope: {path: "", layout: default, type: "pages"}, values: {image: '/assets/img/lucia-lion.jpg'}}
 
