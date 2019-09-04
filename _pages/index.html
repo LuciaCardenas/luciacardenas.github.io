@@ -18,7 +18,7 @@ permalink: /
       <div class="columns is-mobile is-horizontal-center">
         <div class="column is-3-desktop is-6-mobile">
           <center>
-            <amp-img src="{{ site.baseurl | append:'/assets/img/lucia.webp'}}" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/lucia-lion.jpg'}}" 
                      alt="{{ site.title }}"
                      class="border-image"
                      layout="intrinsic"
@@ -26,14 +26,14 @@ permalink: /
           </center>
         </div>
         <div class="column is-3-desktop is-6-mobile has-text-centered">
-          <p class="has-text-info is-size-3 is-uppercase">
+          <h1 class="has-text-info is-size-3-desktop is-size-5-mobile is-uppercase">
             Lucia
-          </p>
-          <p class="has-text-info has-text-weight-bold is-size-4 is-uppercase">
+          </h1>
+          <p class="has-text-info has-text-weight-bold is-size-4-desktop is-size-6-mobile is-uppercase">
             Cardenas Melgarejo
           </p>
-          <h2 class="subtitle">
-            {{ site. description }}
+          <h2 class="is-size-4-desktop is-size-6-mobile">
+            Growth Marketer and Innovation Consultant
           </h2>
           <a class="button is-info is-rounded" href="#contact_me">Contact me</a>
         </div>
@@ -48,11 +48,13 @@ permalink: /
     <div class="container" id="last_articles">
       <h2 class="title">Hi !</h2>
       <p>
-        My name is Lucia Cardenas Melgarejo and I help national and
+        My name is <strong>Lucia</strong> Cardenas Melgarejo and I help national and
         international business to reach their full growth potential and improve
-        their marketing strategies. Skilled with +7 years, I have been Digital
-        Marketing Manager, Community Leader and Facilitator. I have as well
-        extensive experience in education projects
+        their marketing strategies. 
+      </p>
+      <p>
+        Skilled with +7 years, I have been <strong>Digital Marketing Manager, Community Leader and Facilitator</strong>.
+        I have as well extensive experience in education projects
       </p>
     </div>
   </div>
@@ -111,22 +113,23 @@ permalink: /
 </section>
 
 <section class="hero is-info" id="contact_me">
-  <div class="hero-body">
+  <div class="hero-body ">
     <div class="container">
+      <center>
       <h2 class="title">Ready to improve your marketing</h2>
 
       <form action-xhr="https://formspree.io/felipebrokate@gmail.com"  method="POST">
         <div class="field">
           <label class="label">Name</label>
           <div class="control is-fullwidth">
-            <input class="input" type="text" placeholder="Name"  name="name" required>
+            <input class="input is-rounded" type="text" placeholder="Name"  name="name" required>
           </div>
         </div>
 
         <div class="field">
           <label class="label">Mail</label>
           <div class="control is-expanded">
-            <input class="input" type="text" placeholder="name@example.tld" name="email" required>
+            <input class="input is-rounded" type="text" placeholder="name@example.tld" name="email" required>
           </div>
         </div>
 
@@ -140,12 +143,13 @@ permalink: /
         <div class="field">
           <div class="control is-expanded">
             <center>
-              <input class="button has-text-white is-rounded" type="submit" value="Send">
+              <input class="button is-white is-rounded" type="submit" value="Send">
             </center>
           </div>
         </div>
 
       </form>
+      </center>
 
     </div>
   </div>
