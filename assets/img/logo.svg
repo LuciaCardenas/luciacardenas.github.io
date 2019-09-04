@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="Calque_1"
+   data-name="Calque 1"
+   viewBox="0 0 39.386406 39.386407"
+   version="1.1"
+   sodipodi:docname="bandeauTEST.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   width="39.386406"
+   height="39.386406">
+  <metadata
+     id="metadata1211">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>bandeau-couleurs</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1918"
+     inkscape:window-height="1164"
+     id="namedview1209"
+     showgrid="false"
+     inkscape:zoom="20.280519"
+     inkscape:cx="30.894594"
+     inkscape:cy="21.416496"
+     inkscape:window-x="1920"
+     inkscape:window-y="35"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Calque_1"
+     inkscape:snap-global="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs1080">
+    <style
+       id="style1078">.cls-1{fill:#d40808;}.cls-2{fill:#99d6c9;}.cls-3{fill:#ffcf00;}.cls-4{fill:#ffe5a6;}.cls-5{fill:#247da6;}</style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2031">
+      <circle
+         cy="19.745529"
+         cx="325.80377"
+         id="circle2033"
+         style="fill:#666666;fill-opacity:1;stroke:#000000;stroke-width:0.61359322;stroke-miterlimit:4;stroke-dasharray:4.90874548, 4.90874548;stroke-dashoffset:0"
+         r="19.693203" />
+    </clipPath>
+  </defs>
+  <title
+     id="title1082">bandeau-couleurs</title>
+  <g
+     id="g2023"
+     transform="translate(-306.11057,-0.0523262)"
+     clip-path="url(#clipPath2031)"
+     style="opacity:1">
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="281.32,8.19 239.94,11.48 285.39,24.43 "
+       id="polygon1981" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="325.42,26.38 318.46,9.36 285.39,24.43 "
+       id="polygon1983" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="325.42,0 281.32,8.19 318.46,9.36 "
+       id="polygon1985" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="285.39,24.43 231.92,39.64 284.56,39.38 "
+       id="polygon1987" />
+    <polygon
+       style="fill:#99d6c9"
+       class="cls-2"
+       points="285.39,24.43 224.56,25.79 231.92,39.64 "
+       id="polygon1989" />
+    <polygon
+       style="fill:#99d6c9"
+       class="cls-2"
+       points="281.32,8.19 268.63,0 239.94,11.48 "
+       id="polygon1991" />
+    <polygon
+       style="fill:#99d6c9"
+       class="cls-2"
+       points="402.93,17.1 325.42,0 318.46,9.36 "
+       id="polygon1993" />
+    <polygon
+       style="fill:#ffcf00"
+       class="cls-3"
+       points="285.39,24.43 284.56,39.38 325.42,26.38 "
+       id="polygon1995" />
+    <polygon
+       style="fill:#ffcf00"
+       class="cls-3"
+       points="366.75,13.78 318.46,9.36 325.42,26.38 "
+       id="polygon1997" />
+    <polygon
+       style="fill:#ffe5a6"
+       class="cls-4"
+       points="402.93,17.1 325.42,26.38 368.8,39.38 "
+       id="polygon1999" />
+    <polygon
+       style="fill:#ffe5a6"
+       class="cls-4"
+       points="325.42,0 268.63,0 281.32,8.19 "
+       id="polygon2001" />
+    <polygon
+       style="fill:#247da6"
+       class="cls-5"
+       points="325.42,26.38 284.56,39.38 368.8,39.38 "
+       id="polygon2003" />
+    <polygon
+       style="fill:#247da6"
+       class="cls-5"
+       points="318.46,9.36 281.32,8.19 285.39,24.43 "
+       id="polygon2005" />
+    <polygon
+       style="fill:#247da6"
+       class="cls-5"
+       points="285.39,24.43 239.94,11.48 224.56,25.79 "
+       id="polygon2007" />
+    <polygon
+       style="fill:#247da6"
+       class="cls-5"
+       points="368.8,0 325.42,0 402.93,17.1 "
+       id="polygon2009" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="431.28,0 368.8,0 402.93,17.1 "
+       id="polygon2011" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="402.93,17.1 421.54,39.38 472.24,25.79 "
+       id="polygon2013" />
+    <polygon
+       style="fill:#99d6c9"
+       class="cls-2"
+       points="402.93,17.1 384.19,29.33 421.54,39.38 "
+       id="polygon2015" />
+    <polygon
+       style="fill:#ffcf00"
+       class="cls-3"
+       points="384.19,29.33 368.8,39.38 421.54,39.38 "
+       id="polygon2017" />
+    <polygon
+       style="fill:#d40808"
+       class="cls-1"
+       points="402.93,17.1 325.42,26.38 366.75,13.78 "
+       id="polygon2019" />
+    <polygon
+       style="fill:#247da6"
+       class="cls-5"
+       points="439.59,21.69 431.28,0 402.93,17.1 "
+       id="polygon2021" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:40.91322327px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.02283061;"
+     x="6.5176973"
+     y="34.320007"
+     id="text2623"><tspan
+       sodipodi:role="line"
+       id="tspan2621"
+       x="6.5176973"
+       y="34.320007"
+       style="fill:#ffffff;stroke-width:1.02283061;">L</tspan></text>
+</svg>

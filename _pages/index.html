@@ -18,9 +18,11 @@ permalink: /
       <div class="columns is-mobile is-horizontal-center">
         <div class="column is-3-desktop is-6-mobile">
           <center>
-            <amp-img src="{{ site.baseurl | append:'/assets/img/lucia.jpg'}}" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/lucia.webp'}}" 
                      alt="{{ site.title }}"
-                     width="150" height="150"></amp-img>
+                     class="border-image"
+                     layout="intrinsic"
+                     width="250" height="250"></amp-img>
           </center>
         </div>
         <div class="column is-3-desktop is-6-mobile has-text-centered">
@@ -33,7 +35,7 @@ permalink: /
           <h2 class="subtitle">
             {{ site. description }}
           </h2>
-          <a class="button is-info is-rounded">Contact me</a>
+          <a class="button is-info is-rounded" href="#contact_me">Contact me</a>
         </div>
       </div>
     </div>
@@ -41,7 +43,7 @@ permalink: /
 </section>
 
 
-<section class="hero is-warning">
+<section class="hero is-warning is-medium">
   <div class="hero-body">
     <div class="container" id="last_articles">
       <h2 class="title">Hi !</h2>
@@ -108,49 +110,38 @@ permalink: /
   </div>
 </section>
 
-<section class="hero is-info">
+<section class="hero is-info" id="contact_me">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Ready to improve your marketing</h2>
 
-      <form name="LoginForm" action="/login/" method="post">
-
-        <div class="field is-horizontal">
-          <div class="field-label is-normal">
-            <label class="label">Name</label>
-          </div>
-          <div class="field-body">
-            <div class="field is-expanded">
-              <div class="control is-fullwidth">
-                <input class="input" type="text" placeholder="Name">
-              </div>
-            </div>
+      <form action-xhr="https://formspree.io/felipebrokate@gmail.com"  method="POST">
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control is-fullwidth">
+            <input class="input" type="text" placeholder="Name"  name="name" required>
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label">
-            <label class="label">Mail</label>
-          </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control is-expanded">
-                <input class="input" type="text" placeholder="name@example.com">
-              </div>
-            </div>
+        <div class="field">
+          <label class="label">Mail</label>
+          <div class="control is-expanded">
+            <input class="input" type="text" placeholder="name@example.tld" name="email" required>
           </div>
         </div>
 
-        <div class="field is-horizontal">
-          <div class="field-label">
-            <label class="label">Message</label>
+        <div class="field">
+          <label class="label">Message</label>
+          <div class="control is-expanded">
+            <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
           </div>
-          <div class="field-body">
-            <div class="field">
-              <div class="control is-expanded">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-              </div>
-            </div>
+        </div>
+
+        <div class="field">
+          <div class="control is-expanded">
+            <center>
+              <input class="button has-text-white is-rounded" type="submit" value="Send">
+            </center>
           </div>
         </div>
 
