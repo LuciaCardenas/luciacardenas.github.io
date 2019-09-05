@@ -8,7 +8,7 @@
                width="30" height="30"></amp-img>
     </a>
     <div class="navbar-item" style="flex-grow: 1; justify-content: center;">
-      <a class="button is-info is-rounded is-hidden-desktop">Contact me</a>
+      <a on="tap:AMP.setState({ hideGreeting: false })" class="button is-info is-rounded is-hidden-desktop">Call me 06<div hidden [hidden]="hideGreeting">95 31 68 21</div> </a>
     </div>
 
     <a class="navbar-burger burger" on='tap:sidebar.toggle' 
