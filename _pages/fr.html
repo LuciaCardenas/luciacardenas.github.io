@@ -1,21 +1,21 @@
 ---
-permalink: /es
+permalink: /fr
 ---
 
-<html ⚡ lang="es">
+<html ⚡ lang="fr">
   <link rel="alternate" href="{{ site.baseurl }}" hreflang="en" />
-  <link rel="alternate" href="{{ site.baseurl | append: '/fr'}}" hreflang="fr" />
+  <link rel="alternate" href="{{ site.baseurl | append: '/es'}}" hreflang="es" />
   {% include head.html %}
   <body class="has-navbar-fixed-top">
     {% include header.html %}
 
     <section>
-      <div class="container is-fluid is-widescreen">
+      <div class="is-fluid is-widescreen">
         <amp-img src="{{ site.baseurl | append:'/assets/img/bandeau.svg'}}" 
                  alt="Line of {{ site.title }}"
                  title="Line {{ site.title }}"
                  layout="responsive"
-                 width="100" height="5"></amp-img>
+                 width="100" height="7"></amp-img>
       </div>
     </section>
 
@@ -34,7 +34,7 @@ permalink: /es
               </center>
             </div>
             <div class="column is-3-desktop is-6-mobile has-text-centered">
-              <h1>
+              <h1 class="bottom-three">
                 <p class="has-text-info is-size-3-desktop is-size-5-mobile is-uppercase">
                   Lucia
                 </p>
@@ -42,10 +42,10 @@ permalink: /es
                   Cardenas Melgarejo
                 </p>
                 <p class="is-size-4-desktop is-size-6-mobile">
-                  Growth Marketer and Innovation Consultant
+                  Growth Marketer et Consultante d'innovation
                 </p>
               </h1>
-              <a class="button is-info is-rounded" href="#contact_me">Contact me</a>
+              <a class="button is-info is-rounded" on="tap:contact_me.scrollTo(duration=500)">Me contacter</a>
             </div>
           </div>
         </div>
@@ -53,18 +53,16 @@ permalink: /es
     </section>
 
 
-    <section class="hero is-warning is-medium">
+    <section class="hero is-warning is-small">
       <div class="hero-body">
         <div class="container" id="last_articles">
-          <h2 class="title">Hola !</h2>
-          <p>
-            My name is <strong>Lucia</strong> Cardenas Melgarejo and I help national and
-            international business to reach their full growth potential and improve
-            their marketing strategies. 
+          <h2 class="title">Bonjour !</h2>
+          <p class="is-size-4-desktop is-4-mobile">
+            Je m'appelle <strong>Lucia</strong> Cardenas Melgarejo. J'aide des business à l'échelle nationale et internationale à atteindre leur potentiel maximale de croissance mais aussi à améliorer ses stratégies de marketing.
           </p>
-          <p>
-            Skilled with +7 years, I have been <strong>Digital Marketing Manager, Community Leader and Facilitator</strong>.
-            I have as well extensive experience in education projects
+          <p class="is-size-4-desktop is-4-mobile">
+            J'ai plus de 7 ans d'expérience. J'ai été <strong>Manager d'équipe de marketing digital, Community Leader et Facilitatrice d'évènements</strong>.
+            J'ai aussi de l'expérience sur des projets d'éducation.
           </p>
         </div>
       </div>
@@ -73,55 +71,58 @@ permalink: /es
     <section class="section">
       <div class="container">
         <center>
-          <h2 class="title">What can I do for you ?</h2>
+          <h2 class="title bottom-five">Que puis-je faire pour vous ?</h2>
         </center>
 
         <div class="columns is-mobile is-multiline is-horizontal-center is-centered">
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
-            <amp-img src="/assets/img/growth.svg" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/growth.svg'}}" 
                      alt="growth"
                      title="Growth and marketing"
                      width="150" height="150"></amp-img>
                    <br></br>
                    <h3 class="title">
-                     Growth and Marketing
+                     Croissance commercial et marketing
                    </h3>
                    <p>
-                     Define the KPIs and Growth Strategies
-                     Execute acquisition actions to reach your goals (Google Ads, Facebook
-                     Ads, Emailing, Landing Pages, AB Tests)
+                     Définir des indicateurs de performance (KPIs) et de stratégies de croissance
+                   </p>
+                   <p>
+                     Réaliser des actions d'acquisition pour atteindre vos objectifs
+                   </p>
+                   <p>
+                     <i>(Google Ads, Facebook Ads, Emailing, Landing Pages, AB Tests)</i>
                    </p>
           </div>
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
-            <amp-img src="/assets/img/event.svg" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/event.svg'}}" 
                      alt="event"
                      title="Event Management and Facilitation"
                      width="150" height="150"></amp-img>
                    <br></br>
                    <h3 class="title">
-                     Event Management and Facilitation
+                     Gestion et animation d'événements
                    </h3>
                    <p>
-                     Design and execute an event strategy to create business opportunities
-                     and build your community
+                     Concevoir et exécuter une stratégie d’événement pour créer des opportunités d’affaires et construire votre communauté
                    </p>
           </div>
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
             <center>
-              <amp-img src="/assets/img/education.svg" 
+              <amp-img src="{{ site.baseurl | append:'/assets/img/education.svg'}}" 
                        alt="education"
                        title="Education projects"
                        width="150" height="150"></amp-img>
             </center>
             <br></br>
             <h3 class="title">
-              Education Projects
+              Projets d'éducation
             </h3>
             <p>
-              Create personalized learning experiences and workshops
+              Créer des expériences d'apprentissage et des ateliers personnalisés
             </p>
           </div>
 
@@ -133,41 +134,21 @@ permalink: /es
       <div class="hero-body ">
         <div class="container">
           <center>
-            <h2 class="title">Ready to improve your marketing</h2>
-
-            <form action-xhr="https://formspree.io/felipebrokate@gmail.com"  method="POST">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control is-fullwidth">
-                  <input class="input is-rounded" type="text" placeholder="Name"  name="name" required>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Mail</label>
-                <div class="control is-expanded">
-                  <input class="input is-rounded" type="text" placeholder="name@example.tld" name="email" required>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control is-expanded">
-                  <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="control is-expanded">
-                  <center>
-                    <input class="button is-white is-rounded" type="submit" value="Send">
-                  </center>
-                </div>
-              </div>
-
-            </form>
+            <h2 class="title">Prêt à améliorer votre marketing ?</h2>
           </center>
+        </div>
+      </div>
+    </section>
 
+
+    <section class="hero">
+      <div class="hero-body ">
+        <div class="container">
+          <center>
+            <amp-iframe width="400" height="600" sandbox="allow-scripts" 
+                                                 layout="intrinsic" src="/form"> 
+            </amp-iframe>
+          </center>
         </div>
       </div>
     </section>
