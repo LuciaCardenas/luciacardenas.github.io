@@ -11,7 +11,7 @@
       <!--
       <a on="tap:AMP.setState({ hideGreeting: false })" class="button is-info is-rounded is-hidden-desktop">Call me 06<div hidden [hidden]="hideGreeting">95 31 68 21</div> </a>
       -->
-      <a class="button is-info is-rounded is-hidden-desktop" href="#contact_me">Contact me</a>
+      <a class="button is-info is-rounded is-hidden-desktop" on="tap:contact_me.scrollTo(duration=500)">Contact me</a>
     </div>
 
     <a class="navbar-burger burger" on='tap:sidebar.toggle' 
