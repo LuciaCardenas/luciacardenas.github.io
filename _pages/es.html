@@ -2,6 +2,7 @@
 permalink: /es
 ---
 
+<!doctype html>
 <html ⚡ lang="es">
   <link rel="alternate" href="{{ site.baseurl }}" hreflang="en" />
   <link rel="alternate" href="{{ site.baseurl | append: '/fr'}}" hreflang="fr" />
@@ -10,12 +11,12 @@ permalink: /es
     {% include header.html %}
 
     <section>
-      <div class="container is-fluid is-widescreen">
+      <div class="is-fluid is-widescreen">
         <amp-img src="{{ site.baseurl | append:'/assets/img/bandeau.svg'}}" 
                  alt="Line of {{ site.title }}"
                  title="Line {{ site.title }}"
                  layout="responsive"
-                 width="100" height="5"></amp-img>
+                 width="100" height="7"></amp-img>
       </div>
     </section>
 
@@ -34,7 +35,7 @@ permalink: /es
               </center>
             </div>
             <div class="column is-3-desktop is-6-mobile has-text-centered">
-              <h1>
+              <h1 class="bottom-three">
                 <p class="has-text-info is-size-3-desktop is-size-5-mobile is-uppercase">
                   Lucia
                 </p>
@@ -42,10 +43,10 @@ permalink: /es
                   Cardenas Melgarejo
                 </p>
                 <p class="is-size-4-desktop is-size-6-mobile">
-                  Growth Marketer and Innovation Consultant
+                  Growth Marketer & Consultante de innovación 
                 </p>
               </h1>
-              <a class="button is-info is-rounded" href="#contact_me">Contact me</a>
+              <a class="button is-info is-rounded" on="tap:contact_me.scrollTo(duration=500)">Contactarme</a>
             </div>
           </div>
         </div>
@@ -53,18 +54,20 @@ permalink: /es
     </section>
 
 
-    <section class="hero is-warning is-medium">
+    <section class="hero is-warning is-small">
       <div class="hero-body">
         <div class="container" id="last_articles">
           <h2 class="title">Hola !</h2>
-          <p>
-            My name is <strong>Lucia</strong> Cardenas Melgarejo and I help national and
-            international business to reach their full growth potential and improve
-            their marketing strategies. 
+          <p class="is-size-4-desktop is-4-mobile">
+            Mi nombre es <strong>Lucia</strong> Cardenas Melgarejo. Mi trabajo
+            es ayudar a negocios nacionales e internacionales a alcanzar su
+            potencial de crecimiento y a mejorar sus estrategias de comercio.
           </p>
-          <p>
-            Skilled with +7 years, I have been <strong>Digital Marketing Manager, Community Leader and Facilitator</strong>.
-            I have as well extensive experience in education projects
+          <p class="is-size-4-desktop is-4-mobile">
+            Tengo mas de 7 años de experiencia en este campo. He sido
+            <strong>Gerente de marketing digital, Líder de comunidades y
+              Facilitadora de eventos</strong>.
+            Ademas tengo una extensa experiencia en proyectos educativos.
           </p>
         </div>
       </div>
@@ -73,55 +76,58 @@ permalink: /es
     <section class="section">
       <div class="container">
         <center>
-          <h2 class="title">What can I do for you ?</h2>
+          <h2 class="title bottom-five">Como puedo ayudarte ?</h2>
         </center>
 
         <div class="columns is-mobile is-multiline is-horizontal-center is-centered">
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
-            <amp-img src="/assets/img/growth.svg" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/growth.svg'}}" 
                      alt="growth"
                      title="Growth and marketing"
                      width="150" height="150"></amp-img>
                    <br></br>
                    <h3 class="title">
-                     Growth and Marketing
+                     Crecimiento y comercio
                    </h3>
                    <p>
-                     Define the KPIs and Growth Strategies
-                     Execute acquisition actions to reach your goals (Google Ads, Facebook
-                     Ads, Emailing, Landing Pages, AB Tests)
+                     Definir indicadores de rendimiento (KPIs) y estrategias de crecimiento
+                   </p>
+                   <p>
+                     Ejecutar acciones de adquisición para alcanzar sus metas
+                   </p>
+                   <p>
+                     <i>(Google Ads, Facebook Ads, Emailing, Landing Pages, AB Tests)</i>
                    </p>
           </div>
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
-            <amp-img src="/assets/img/event.svg" 
+            <amp-img src="{{ site.baseurl | append:'/assets/img/event.svg'}}" 
                      alt="event"
                      title="Event Management and Facilitation"
                      width="150" height="150"></amp-img>
                    <br></br>
                    <h3 class="title">
-                     Event Management and Facilitation
+                     Manejo y facilitación de eventos
                    </h3>
                    <p>
-                     Design and execute an event strategy to create business opportunities
-                     and build your community
+                     Diseño y ejecución de estrategias de eventos para crear oportunidades de negocios
                    </p>
           </div>
 
           <div class="column is-4-desktop is-12-mobile has-text-centered">
             <center>
-              <amp-img src="/assets/img/education.svg" 
+              <amp-img src="{{ site.baseurl | append:'/assets/img/education.svg'}}" 
                        alt="education"
                        title="Education projects"
                        width="150" height="150"></amp-img>
             </center>
             <br></br>
             <h3 class="title">
-              Education Projects
+              Proyectos educativos
             </h3>
             <p>
-              Create personalized learning experiences and workshops
+              Crear experiencias personalizadas de aprendizaje y talleres de trabajo
             </p>
           </div>
 
@@ -133,41 +139,21 @@ permalink: /es
       <div class="hero-body ">
         <div class="container">
           <center>
-            <h2 class="title">Ready to improve your marketing</h2>
-
-            <form action-xhr="https://formspree.io/felipebrokate@gmail.com"  method="POST">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control is-fullwidth">
-                  <input class="input is-rounded" type="text" placeholder="Name"  name="name" required>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Mail</label>
-                <div class="control is-expanded">
-                  <input class="input is-rounded" type="text" placeholder="name@example.tld" name="email" required>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control is-expanded">
-                  <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="control is-expanded">
-                  <center>
-                    <input class="button is-white is-rounded" type="submit" value="Send">
-                  </center>
-                </div>
-              </div>
-
-            </form>
+            <h2 class="title">Listo para mejorar su comercio ?</h2>
           </center>
+        </div>
+      </div>
+    </section>
 
+
+    <section class="hero">
+      <div class="hero-body ">
+        <div class="container">
+          <center>
+            <amp-iframe width="400" height="600" sandbox="allow-scripts" 
+                                                 layout="intrinsic" src="/form"> 
+            </amp-iframe>
+          </center>
         </div>
       </div>
     </section>
