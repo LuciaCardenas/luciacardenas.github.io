@@ -145,15 +145,37 @@ permalink: /es
       </div>
     </section>
 
-
-    <section class="hero">
+    <section class="hero is-info">
       <div class="hero-body ">
         <div class="container">
-          <center>
-            <amp-iframe width="400" height="600" sandbox="allow-scripts" 
-                                                 layout="intrinsic" src="/form"> 
-            </amp-iframe>
-          </center>
+          <div class="field">
+            <label class="label">Nombre</label>
+            <div class="control is-fullwidth">
+              <input class="input is-rounded" type="text" placeholder="Name"  name="name" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email</label>
+            <div class="control is-expanded">
+              <input class="input is-rounded" type="text" placeholder="name@example.tld" name="email" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Mensaje</label>
+            <div class="control is-expanded">
+              <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="control is-expanded">
+              <center>
+                <a class="button is-white is-rounded" href="/form">Send</a>
+              </center>
+            </div>
+          </div>
         </div>
       </div>
     </section>
