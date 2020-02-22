@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "bundle exec jekyll serve --livereload",
     "watch": "./node_modules/.bin/gulp watch"
   },
   "repository": {
@@ -18,16 +19,16 @@
   },
   "homepage": "https://github.com/luciacardenas/luciacardenas.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.10.0",
     "gulp-concat": "^2.6.1",
-    "gulp-image": "^4.3.0",
+    "gulp-imagemin": "^6.1.1",
     "gulp-purifycss": "^0.2.0",
     "gulp-replace": "^1.0.0",
     "gulp-responsive": "^2.11.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
-    "i": "^0.3.6",
-    "npm": "^6.4.0"
+    "gulp-rename": "^1.4.0",
+    "gulp-amphtml-validator": "^1.0.2"
   }
 }
