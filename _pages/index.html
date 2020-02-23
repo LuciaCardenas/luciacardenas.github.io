@@ -1,5 +1,6 @@
 ---
 layout: default
+carousel: true
 permalink: /
 lang: en_US
 ---
@@ -140,183 +141,47 @@ lang: en_US
 
     </div>
 
-
-    <div id="facilitation" class="columns is-mobile is-multiline is-horizontal-center is-centered"  hidden="">
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/atenas.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="540" height="303"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-           🇬🇷 Startup Weekend Athens Women, 27-29 September 2019
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/chambery.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="540" height="506"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-         🇫🇷  Startup Weekend Chambéry, 1 & 2 February 2020 
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/chambery2.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="538" height="508"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          🇫🇷  Startup Weekend Chambéry, 1 & 2 February 2020 
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/gswai2018.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="1024" height="595"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          🇫🇷 Startup Weekend Artificial Intelligence Paris, November 30 - December 2, 2018
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/outremer.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="768" height="1024"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-           Startup Weekend Paris Outre-Mer, March 15 - 17, 2019
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/saintlo.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="512" height="288"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          Startup Weekend Saint-Lô, October 11-13, 2019
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/saintlo2.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="1024" height="768"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          Startup Weekend Saint-Lô, October 11-13, 2019
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/valencia.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="800" height="600"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          🇪🇸  Valencia Social Innovation Startup Weekend,  May 17 - 19, 2019 
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/facilitation/valencia2.jpg' | relative_url }}" 
-               on="tap:lightbox1" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="1024" height="768"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          🇪🇸  Valencia Social Innovation Startup Weekend,  May 17 - 19, 2019 
-        </p>
-      </div>
-
+    <div id="facilitation"  hidden="">
+      <amp-carousel class="carousel-component" height="400" layout="fixed-height" type="carousel"  controls>
+        {% for image in site.data.facilitations %}
+        <figure>
+          <amp-img src="{{ image.img | relative_url }}" 
+                   on="tap:lightbox1" 
+                   tabindex="0"
+                   role="button"
+                   alt=""
+                   title=""
+                   width="450" height="300"
+                               layout="intrinsic"
+                               ></amp-img>
+            <p>
+              {{ image.text }}
+            </p>
+        </figure>
+        {% endfor %}
+      </amp-carousel>
       <amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
     </div>
 
-
-    <div id="education" class="columns is-mobile is-multiline is-horizontal-center is-centered"  hidden="">
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/education/rocketschool.jpg' | relative_url }}" 
-               on="tap:lightbox2" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="480" height="360"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          Rocket School Boot Camp
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/education/rocketschool2.jpg' | relative_url }}" 
-               on="tap:lightbox2" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="1632" height="1224"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          Rocket School Boot Camp
-        </p>
-      </div>
-      <div class="column is-4-desktop is-12-mobile has-text-centered">
-        <amp-img src="{{ '/assets/img/education/rocketschool3.jpg' | relative_url }}" 
-               on="tap:lightbox2" 
-               tabindex="0"
-               role="button"
-               alt=""
-               title=""
-               width="400" height="300"
-                           layout="intrinsic"
-                           ></amp-img>
-        <p class="is-size-5">
-          Rocket School Boot Camp
-        </p>
-      </div>
-
+    <div id="education" hidden="">
+      <amp-carousel class="carousel-component" height="400" layout="fixed-height" type="carousel"  controls>
+        {% for image in site.data.educations %}
+        <figure>
+          <amp-img src="{{ image.img | relative_url }}" 
+                   on="tap:lightbox2" 
+                   tabindex="0"
+                   role="button"
+                   alt=""
+                   title=""
+                   width="450" height="300"
+                               layout="intrinsic"
+                               ></amp-img>
+            <p>
+              {{ image.text }}
+            </p>
+        </figure>
+        {% endfor %}
+      </amp-carousel>
       <amp-image-lightbox id="lightbox2" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
     </div>
 
