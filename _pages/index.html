@@ -94,7 +94,7 @@ lang: en_US
       </div>
 
       <div class="column is-4-desktop is-12-mobile has-text-centered"
-           on="tap:facilitation.toggleVisibility,education.hide,facilitation.scrollTo(duration=500)"
+           on="tap:facilitation.toggleVisibility,readmore-button-facilitation.toggleVisibility,readmore-button-education.show,education.hide,facilitation.scrollTo(duration=500)"
            tabindex="0"
            role="button"
            >
@@ -102,18 +102,21 @@ lang: en_US
                  alt="event"
                  title="Event Management and Facilitation"
                  width="150" height="150"></amp-img>
-               <br></br>
-               <h3 class="title">
-                 Event Management and Facilitation
-               </h3>
-               <p>
-                 Design and execute an event strategy to create business opportunities
-                 and build your community
-               </p>
+        <br></br>
+        <h3 class="title">
+          Event Management and Facilitation
+        </h3>
+        <p>
+          Design and execute an event strategy to create business opportunities
+          and build your community
+        </p>
+        <a class="button is-fullwidth" id="readmore-button-facilitation">
+          Know more ⬇️
+          </a>
       </div>
 
       <div class="column is-4-desktop is-12-mobile has-text-centered"
-           on="tap:education.toggleVisibility,facilitation.hide,education.scrollTo(duration=500)"
+           on="tap:education.toggleVisibility,readmore-button-education.toggleVisibility,readmore-button-facilitation.show,facilitation.hide,education.scrollTo(duration=500)"
            tabindex="0"
            role="button"
           >
@@ -130,6 +133,9 @@ lang: en_US
         <p>
           Create personalized learning experiences and workshops
         </p>
+        <a class="button is-fullwidth" id="readmore-button-education">
+          Know more ⬇️
+          </a>
       </div>
 
     </div>
