@@ -1,4 +1,5 @@
 ---
+carousel: true
 permalink: /es
 lang: es_ES
 ---
@@ -102,7 +103,11 @@ lang: es_ES
                    </p>
           </div>
 
-          <div class="column is-4-desktop is-12-mobile has-text-centered">
+          <div class="column is-4-desktop is-12-mobile has-text-centered"
+               on="tap:facilitation.toggleVisibility,readmore-button-facilitation.toggleVisibility,readmore-button-education.show,education.hide,facilitation.scrollTo(duration=500)"
+               tabindex="0"
+               role="button"
+               >
             <amp-img src="{{ site.baseurl | append:'/assets/img/event.svg'}}" 
                      alt="event"
                      title="Event Management and Facilitation"
@@ -114,9 +119,16 @@ lang: es_ES
                    <p>
                      Diseño y ejecución de estrategias de eventos para crear oportunidades de negocios
                    </p>
+                   <a class="button is-fullwidth" id="readmore-button-facilitation">
+                     Saber más ⬇️
+                   </a>
           </div>
 
-          <div class="column is-4-desktop is-12-mobile has-text-centered">
+          <div class="column is-4-desktop is-12-mobile has-text-centered"
+               on="tap:education.toggleVisibility,readmore-button-education.toggleVisibility,readmore-button-facilitation.show,facilitation.hide,education.scrollTo(duration=500)"
+               tabindex="0"
+               role="button"
+               >
             <center>
               <amp-img src="{{ site.baseurl | append:'/assets/img/education.svg'}}" 
                        alt="education"
@@ -130,20 +142,204 @@ lang: es_ES
             <p>
               Crear experiencias personalizadas de aprendizaje y talleres de trabajo
             </p>
+            <a class="button is-fullwidth" id="readmore-button-education">
+              Saber más ⬇️
+            </a>
           </div>
 
+        </div>
+
+        <div id="facilitation"  hidden="">
+          <amp-carousel class="carousel-component" height="400" layout="fixed-height" type="carousel"  controls>
+            {% for image in site.data.facilitations %}
+            <figure>
+              <amp-img src="{{ image.img | relative_url }}" 
+                       on="tap:lightbox1" 
+                       tabindex="0"
+                       role="button"
+                       alt=""
+                       title=""
+                       width="450" height="300"
+                                   layout="intrinsic"
+                                   ></amp-img>
+                <p>
+                  {{ image.text }}
+                </p>
+            </figure>
+            {% endfor %}
+          </amp-carousel>
+          <amp-image-lightbox id="lightbox1" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
+        </div>
+
+        <div id="education" hidden="">
+          <amp-carousel class="carousel-component" height="400" layout="fixed-height" type="carousel"  controls>
+            {% for image in site.data.educations %}
+            <figure>
+              <amp-img src="{{ image.img | relative_url }}" 
+                       on="tap:lightbox2" 
+                       tabindex="0"
+                       role="button"
+                       alt=""
+                       title=""
+                       width="450" height="300"
+                                   layout="intrinsic"
+                                   ></amp-img>
+                <p>
+                  {{ image.text }}
+                </p>
+            </figure>
+            {% endfor %}
+          </amp-carousel>
+          <amp-image-lightbox id="lightbox2" layout="nodisplay" data-close-button-aria-label="Close"></amp-image-lightbox>
+        </div>
+
+
+
+      </div>
+    </section>
+
+
+    <section class="hero is-info">
+      <div class="hero-body">
+        <div class="container">
+          <center>
+            <h2 class="title bottom-five">Ellos ya me tienen confianza</h2>
+          </center>
+          <div class="columns is-mobile is-multiline is-horizontal-center is-centered">
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/adsup.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/alianzafrancesa.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/BBVA.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/brontibay.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/eathwith2.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/enedis.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/fitnext2.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/fabrikcycles.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/gemperles.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/ocus.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/pib.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/rocket-school.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/sanofi.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/timebyme.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+            <div class="column is-3">
+              <amp-img src="{{ '/assets/img/companies/youshould.svg' | relative_url }}" 
+                       alt=""
+                       title=""
+                       width="150" height="150"
+                                   layout="intrinsic"
+                                   ></amp-img>
+            </div>
+
+
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="hero is-info" id="contact_me">
-      <div class="hero-body ">
-        <div class="container">
-          <center>
-            <h2 class="title bottom-five">Listo para mejorar su comercio ?</h2>
-          </center>
-          {% include contact.html %}
-        </div>
+
+    <section class="section" id="contact_me">
+      <div class="container">
+        <center>
+          <h2 class="title">Listo para mejorar su comercio ?</h2>
+        </center>
+        {% include contact.html %}
       </div>
     </section>
 
