@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /fr/blog/
+---
+
+<section class="hero is-small">
+  <div class="hero-body is-centered">
+    <div class="container">
+      <h1 class="title">
+        Mon blog
+      </h1>
+
+      <ul>
+        {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

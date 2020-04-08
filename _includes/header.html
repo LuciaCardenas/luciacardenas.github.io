@@ -23,10 +23,11 @@
   </div>
 
   <div id="navbarExampleTransparentExample" class="navbar-menu">
+    {% if page.lang %}
     <div class="navbar-end">
       {% for language in site.data.lang %}
       {% if page.lang == 'en_US' %}
-      <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | prepend: 'es' | prepend: site.baseurl}}{% elsif language[0] == 'fr' %}{{ page.url | prepend: 'fr' | prepend: site.baseurl}}{% else %}{{ page.url | prepend: site.baseurl}}{% endif %}">
+      <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | prepend: 'es' | relative_url | prepend: site.baseurl }}{% elsif language[0] == 'fr' %}{{ page.url | prepend: 'fr' | relative_url | prepend: site.baseurl }}{% else %}{{ page.url | prepend: site.baseurl}}{% endif %}">
         {{ language[1].icon }} {{ language[0] }} 
       </a>
       {% endif %}
@@ -42,6 +43,7 @@
       {% endif %}
       {% endfor %}
     </div>
+    {% endif %}
 
   </div>
 </nav>
