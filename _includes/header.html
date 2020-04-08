@@ -11,7 +11,15 @@
       <!--
       <a on="tap:AMP.setState({ hideGreeting: false })" class="button is-info is-rounded is-hidden-desktop">Call me 06<div hidden [hidden]="hideGreeting">95 31 68 21</div> </a>
       -->
+      {% if page.path contains '_es' %}
+      <a class="button is-info is-rounded is-hidden-desktop" href="/es/form">Contactarme</a>
+      {% elsif page.path contains '_fr' %}
+      <a class="button is-info is-rounded is-hidden-desktop" href="/fr/form">Me contacter</a>
+      {% else %}
       <a class="button is-info is-rounded is-hidden-desktop" href="/form">Contact me</a>
+      {% endif %}
+
+
     </div>
 
     <a class="navbar-burger burger" on='tap:sidebar.toggle' 
@@ -25,6 +33,9 @@
   <div id="navbarExampleTransparentExample" class="navbar-menu">
     {% if page.lang %}
     <div class="navbar-end">
+      <a class="navbar-item is-hoverable" href="{% if page.path contains '_es' %}{{ '/es/blog/' | prepend: site.baseurl }}{% elsif page.path contains '_fr' %}{{ '/fr/blog/' | prepend: site.baseurl }}{% else %}{{ '/blog/' | prepend: site.baseurl}}{% endif %}">
+        Blog
+      </a>
       {% for language in site.data.lang %}
       {% if page.lang == 'en_US' %}
       <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | prepend: 'es' | relative_url | prepend: site.baseurl }}{% elsif language[0] == 'fr' %}{{ page.url | prepend: 'fr' | relative_url | prepend: site.baseurl }}{% else %}{{ page.url | prepend: site.baseurl}}{% endif %}">

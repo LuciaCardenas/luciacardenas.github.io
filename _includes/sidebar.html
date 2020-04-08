@@ -10,6 +10,50 @@
     role="button"
     tabindex="0"></amp-img>
 
+      {% if page.path contains '_es' %}
+      <p>
+        <a href="/es/" class="is-size-2 has-text-primary has-text-weight-bold ">
+          Inicio
+        </a>
+      </p>
+      {% elsif page.path contains '_fr' %}
+      <p>
+        <a href="/fr/" class="is-size-2 has-text-primary has-text-weight-bold ">
+          Accueil
+        </a>
+      </p>
+      {% else %}
+      <p>
+        <a href="/" class="is-size-2 has-text-primary has-text-weight-bold ">
+          Home
+        </a>
+      </p>
+      {% endif %}
+
+      <br>
+      {% if page.path contains '_es' %}
+      <p>
+        <a href="/es/blog/" class="is-size-3 has-text-danger has-text-weight-bold ">
+          Blog
+        </a>
+      </p>
+      {% elsif page.path contains '_fr' %}
+      <p>
+        <a href="/fr/blog/" class="is-size-3 has-text-danger has-text-weight-bold ">
+          Blog
+        </a>
+      </p>
+      {% else %}
+      <p>
+        <a href="/blog/" class="is-size-3 has-text-danger has-text-weight-bold ">
+          Blog
+        </a>
+      </p>
+      {% endif %}
+
+      <br>
+      <br>
+
     {% if page.lang %}
       {% for language in site.data.lang %}
       {% if page.lang == 'en_US' %}
