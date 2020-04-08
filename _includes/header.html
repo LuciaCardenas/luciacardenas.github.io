@@ -25,11 +25,21 @@
   <div id="navbarExampleTransparentExample" class="navbar-menu">
     <div class="navbar-end">
       {% for language in site.data.lang %}
-      <div class="navbar-item is-hoverable">
-        <a class="navbar-link" href="/{% if language[0] != 'en' %}{{ language[0] }}{% endif %}">
-          {{ language[1].icon }} {{ language[0] }} 
-        </a>
-      </div>
+      {% if page.lang == 'en_US' %}
+      <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | prepend: 'es' | prepend: site.baseurl}}{% elsif language[0] == 'fr' %}{{ page.url | prepend: 'fr' | prepend: site.baseurl}}{% else %}{{ page.url | prepend: site.baseurl}}{% endif %}">
+        {{ language[1].icon }} {{ language[0] }} 
+      </a>
+      {% endif %}
+      {% if page.lang == 'es_ES' %}
+      <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | prepend: site.baseurl}}{% elsif language[0] == 'fr' %}{{ page.url | replace_first: '/es', '/fr' | prepend: site.baseurl}}{% else %}{{ page.url | replace_first: '/es/', '/' | prepend: site.baseurl}}{% endif %}">
+        {{ language[1].icon }} {{ language[0] }} 
+      </a>
+      {% endif %}
+      {% if page.lang == 'fr_FR' %}
+      <a class="navbar-item is-hoverable" href="{% if language[0] == 'es' %}{{ page.url | replace_first: '/fr', '/es' | prepend: site.baseurl}}{% elsif language[0] == 'fr' %}{{ page.url | prepend: site.baseurl}}{% else %}{{ page.url | replace_first: '/fr/', '/'  }}{% endif %}">
+        {{ language[1].icon }} {{ language[0] }} 
+      </a>
+      {% endif %}
       {% endfor %}
     </div>
 

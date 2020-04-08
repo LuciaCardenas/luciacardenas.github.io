@@ -1,10 +1,31 @@
 <!doctype html>
-<html ⚡ lang="en">
-  <link rel="alternate" href="{{ site.baseurl | append: '/es'}}" hreflang="es" />
-  <link rel="alternate" href="{{ site.baseurl | append: '/fr'}}" hreflang="fr" />
+<html ⚡ lang="{% if page.lang == 'fr_FR' %}fr{% elsif page.lang == 'es_ES' %}es{% else %}en{% endif %}">
+
+  {% if page.path contains '_en' %}
+  <link rel="alternate" href="{{ page.url | replace_first: '/', '/es/' | prepend: site.baseurl}}" hreflang="es" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/', '/fr/' | prepend: site.baseurl}}" hreflang="fr" />
+  {% endif %}
+  {% if page.path contains '_es' %}
+  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/' | prepend: site.baseurl}}" hreflang="en" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/fr/' | prepend: site.baseurl}}" hreflang="fr" />
+  {% endif %}
+  {% if page.path contains '_fr' %}
+  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/' | prepend: site.baseurl}}" hreflang="en" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/es/' | prepend: site.baseurl}}" hreflang="es" />
+  {% endif %}
+
   {% include head.html %}
   <body class="has-navbar-fixed-top">
     {% include header.html %}
+    <section>
+      <div class="is-fluid is-widescreen">
+        <amp-img src="{{ site.baseurl | append:'/assets/img/bandeau.svg'}}" 
+                 alt="Line of {{ site.title }}"
+                 title="Line {{ site.title }}"
+                 layout="responsive"
+                 width="100" height="7"></amp-img>
+      </div>
+    </section>
       {{ content }}
     {% include footer.html %}
   </body>

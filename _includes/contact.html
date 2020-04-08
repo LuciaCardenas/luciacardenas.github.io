@@ -2,7 +2,15 @@
 <div class="field">
   <div class="control is-expanded">
     <center>
+      {% if page.path contains '_en' %}
       <a class="button is-rounded is-large is-primary" href="/form">Contact me</a>
+      {% endif %}
+      {% if page.path contains '_fr' %}
+      <a class="button is-rounded is-large is-primary" href="/fr/form">Me contacter</a>
+      {% endif %}
+      {% if page.path contains '_es' %}
+      <a class="button is-rounded is-large is-primary" href="/es/form">Contácteme </a>
+      {% endif %}
     </center>
   </div>
 </div>

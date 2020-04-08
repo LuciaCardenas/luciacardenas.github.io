@@ -1,33 +1,58 @@
----
-layout: default
-sitemap: false
-permalink: /form
-
----
-
 <section class="hero is-info">
   <div class="hero-body ">
     <div class="container">
       <center>
+      {% if page.path contains '_en' %}
       <h2 class="title bottom-five">Ready to improve your marketing</h2>
+      {% endif %}
+      {% if page.path contains '_es' %}
+      <h2 class="title bottom-five">Listo para mejorar su negocio ?</h2>
+      {% endif %}
+      {% if page.path contains '_fr' %}
+      <h2 class="title bottom-five">Prêt à améliorer votre marketing ?</h2>
+      {% endif %}
       </center>
       <form action="https://formspree.io/lucia.cardenas.mel@gmail.com"  method="POST">
         <div class="field">
+          {% if page.path contains '_en' %}
           <label class="label">Name</label>
+          {% endif %}
+          {% if page.path contains '_es' %}
+          <label class="label">Nombre</label>
+          {% endif %}
+          {% if page.path contains '_fr' %}
+          <label class="label">Nom</label>
+          {% endif %}
           <div class="control is-fullwidth">
             <input class="input is-rounded" type="text" placeholder="Name"  name="name" required>
           </div>
         </div>
 
         <div class="field">
+          {% if page.path contains '_en' %}
           <label class="label">Mail</label>
+          {% endif %}
+          {% if page.path contains '_es' %}
+          <label class="label">Correo</label>
+          {% endif %}
+          {% if page.path contains '_fr' %}
+          <label class="label">Adresse mail</label>
+          {% endif %}
           <div class="control is-expanded">
             <input class="input is-rounded" type="text" placeholder="name@example.tld" name="email" required>
           </div>
         </div>
 
         <div class="field">
+          {% if page.path contains '_en' %}
           <label class="label">Message</label>
+          {% endif %}
+          {% if page.path contains '_es' %}
+          <label class="label">Mensaje</label>
+          {% endif %}
+          {% if page.path contains '_fr' %}
+          <label class="label">Message</label>
+          {% endif %}
           <div class="control is-expanded">
             <textarea class="textarea" placeholder="Textarea" name="message"></textarea>
           </div>

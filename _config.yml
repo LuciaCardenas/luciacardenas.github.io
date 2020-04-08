@@ -38,9 +38,17 @@ exclude:
   - package.json
   - package-lock.json
  
-include:
-  - _pages
+collections_dir: collections
+collections:
+  fr:
+    output: true
+  es:
+    output: true
+  en:
+    output: true
 
 defaults:
-    - {scope: {path: "", layout: default, type: "pages"}, values: {image: '/assets/img/lucia-lion.jpg'}}
-
+  - {scope: {path: "", layout: default, type: "en"}, values: {lang: 'en_US', image: '/assets/img/lucia-lion.jpg'}}
+  - {scope: {path: "", layout: default, type: "fr"}, values: {lang: 'fr_FR', image: '/assets/img/lucia-lion.jpg'}}
+  - {scope: {path: "", layout: default, type: "es"}, values: {lang: 'es_ES', image: '/assets/img/lucia-lion.jpg'}}
+  - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:title', animation: true}}
