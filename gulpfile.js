@@ -87,7 +87,7 @@ function amp_validator() {
 function purification() {
   return gulp.src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(purify(['_includes/*.html', '_layouts/*.html', '_pages/*.html'], {info: true}))
+    .pipe(purify(['_includes/*.html', '_layouts/*.html', 'collections/**/*.html'], {info: true}))
     .pipe(replace(/!important/gm, ''))
     .pipe(cleanCSS({compatibility: 'ie8'}, (details) => {
       console.log(`Minification of ${details.name}: ${details.stats.originalSize} -> ${details.stats.minifiedSize} b`);
@@ -97,7 +97,7 @@ function purification() {
 }
 
 function watch() {
-  gulp.watch(["_layouts/*", "_includes/*.html", "_sass/*", "assets/css/*"], purification);
+  gulp.watch(["_layouts/*", "_includes/*.html", "_sass/*", "assets/css/*", "collections/**/*"], purification);
 }
  
 exports.images = images;

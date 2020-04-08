@@ -6,15 +6,37 @@ permalink: /es/blog/
 <section class="hero is-small">
   <div class="hero-body is-centered">
     <div class="container">
-      <h1 class="title">
-        Mi Blog en español
+      <h1 class="title has-text-centered">
+        Mi Blog
       </h1>
-
       <ul>
         {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
+        <div class="box">
+          <div class="columns is-multiline">
+            <div class="column is-3-desktop is-12-mobile has-text-centered">
+              <a class="image" href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">
+                <amp-img src="{{ post.image.path }}" layout="responsive" width="300" height="200" alt="{{ post.title }}"></amp-img>
+              </a>
+            </div>
+            <div class="column is-9-desktop is-12-mobile">
+              <div class="content">
+                <a class="title is-6" href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title }}</a>
+                <p class="is-size-7">
+                  {{ post.description }}
+                </p>
+                <div class="tags has-addons">
+                  <span class="tag">📅&nbsp;{{ post.date | date: "%b %-d, %Y" }}</span>
+                  {% if post.link %}
+                  <span class="tag is-danger"><i class="fas fa-external-link-alt"></i>&nbsp;{{ post.source }}</span>
+                  {% endif %}
+                  {% for tag in post.tags %}
+                  <a class="tag {% if page.tags contains tag %}is-info{% endif %}" href="/blog/tags#{{ tag }}"> {{ tag }}</a>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         {% endfor %}
       </ul>
     </div>
