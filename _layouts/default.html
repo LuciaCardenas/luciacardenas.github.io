@@ -2,16 +2,16 @@
 <html ⚡ lang="{% if page.lang == 'fr_FR' %}fr{% elsif page.lang == 'es_ES' %}es{% else %}en{% endif %}">
 
   {% if page.path contains '_en' %}
-  <link rel="alternate" href="{{ page.url | replace_first: '/', '/es/' | prepend: site.baseurl}}" hreflang="es" />
-  <link rel="alternate" href="{{ page.url | replace_first: '/', '/fr/' | prepend: site.baseurl}}" hreflang="fr" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/', '/es/' | prepend: site.baseurl | prepend: site.url }}" hreflang="es" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/', '/fr/' | prepend: site.baseurl | prepend: site.url }}" hreflang="fr" />
   {% endif %}
   {% if page.path contains '_es' %}
-  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/' | prepend: site.baseurl}}" hreflang="en" />
-  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/fr/' | prepend: site.baseurl}}" hreflang="fr" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/' | prepend: site.baseurl | prepend: site.url }}" hreflang="en" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/fr/' | prepend: site.baseurl | prepend: site.url }}" hreflang="fr" />
   {% endif %}
   {% if page.path contains '_fr' %}
-  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/' | prepend: site.baseurl}}" hreflang="en" />
-  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/es/' | prepend: site.baseurl}}" hreflang="es" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/' | prepend: site.baseurl | prepend: site.url }}" hreflang="en" />
+  <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/es/' | prepend: site.baseurl | prepend: site.url }}" hreflang="es" />
   {% endif %}
 
   {% include head.html %}
