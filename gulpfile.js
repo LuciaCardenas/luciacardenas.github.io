@@ -1,8 +1,8 @@
 var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
-var purify = require('gulp-purifycss');
 let cleanCSS = require('gulp-clean-css');
+var purgecss = require('gulp-purgecss')
 var responsive = require('gulp-responsive');
 var concat = require('gulp-concat');
 var replace = require('gulp-replace');
@@ -87,7 +87,7 @@ function amp_validator() {
 function purification() {
   return gulp.src(paths.styles.src)
     .pipe(sass().on('error', sass.logError))
-    .pipe(purify(['_includes/*.html', '_layouts/*.html', 'collections/**/*.html'], {info: true}))
+    .pipe(purgecss({content: ['_includes/*.html', '_layouts/*.html', 'collections/**/*.html']}))
     .pipe(replace(/!important/gm, ''))
     .pipe(cleanCSS({compatibility: 'ie8'}, (details) => {
       console.log(`Minification of ${details.name}: ${details.stats.originalSize} -> ${details.stats.minifiedSize} b`);
