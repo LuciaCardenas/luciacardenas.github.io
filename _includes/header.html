@@ -35,11 +35,11 @@
   <div id="navbarMenu" 
        class="navbar-menu"
     >
-    {% if page.lang %}
     <div class="navbar-end">
       <a class="navbar-item is-hoverable" href="{% if page.path contains '_es' %}{{ '/es/blog/' | prepend: site.baseurl }}{% elsif page.path contains '_fr' %}{{ '/fr/blog/' | prepend: site.baseurl }}{% else %}{{ '/blog/' | prepend: site.baseurl}}{% endif %}">
         Blog
       </a>
+    {% if page.lang %}
     <div class="navbar-item">
       <div class="buttons">
         {% for language in site.data.lang %}
@@ -61,8 +61,8 @@
         {% endfor %}
       </div>
     </div>
-    </div>
     {% endif %}
+    </div>
 
   </div>
 </nav>
