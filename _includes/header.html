@@ -21,9 +21,11 @@
 
     </div>
 
-    <a class="navbar-burger burger" 
-       on="tap:navbarMenu.toggleClass(class='is-active')"
-       data-target="navbarMenu">
+    <a 
+      id="buger"
+      class="navbar-burger burger" 
+      on="tap:navbarMenu.toggleClass(class='is-active'),buger.toggleClass(class='is-active')"
+      data-target="navbarMenu">
       <span></span>
       <span></span>
       <span></span>
@@ -32,7 +34,6 @@
 
   <div id="navbarMenu" 
        class="navbar-menu"
-       [class]="showNavbar ? 'is-active' : ''"
     >
     {% if page.lang %}
     <div class="navbar-end">
