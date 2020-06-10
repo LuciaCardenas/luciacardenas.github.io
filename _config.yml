@@ -12,6 +12,10 @@ logo: '/assets/img/lucia-lion.jpg'
 linkedin_username:  luciacardenasmelgarejo
 github_username:  luciacardenas
 
+# Color the browser elements #
+color-browser: "#247da6"
+apple-status-bar-style: "black-translucent"
+
 google_analytics: UA-147263429-1
 google_site_verification: 
 
