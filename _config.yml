@@ -48,7 +48,7 @@ collections:
     output: true
 
 defaults:
-  - {scope: {path: "", layout: default, type: "en"}, values: {lang: 'en_US', image: '/assets/img/lucia-lion.jpg'}}
-  - {scope: {path: "", layout: default, type: "fr"}, values: {lang: 'fr_FR', image: '/assets/img/lucia-lion.jpg'}}
-  - {scope: {path: "", layout: default, type: "es"}, values: {lang: 'es_ES', image: '/assets/img/lucia-lion.jpg'}}
+  - {scope: {path: "", layout: default, type: "en"}, values: {lang: 'en_US', image: '/assets/img/lucia-lion.jpg', description: 'Growth Marketer and Innovation Consultant', title: 'Lucia Cardenas Melgarejo' }}
+  - {scope: {path: "", layout: default, type: "fr"}, values: {lang: 'fr_FR', image: '/assets/img/lucia-lion.jpg', description: 'Growth Marketer et Consultante en innovation', title: 'Lucia Cardenas Melgarejo' }}
+  - {scope: {path: "", layout: default, type: "es"}, values: {lang: 'es_ES', image: '/assets/img/lucia-lion.jpg', description: 'Growth Marketer & Consultora de innovación', title: 'Lucia Cardenas Melgarejo' }}
   - {scope: {type: posts}, values: {layout: post, permalink: '/blog/:title', animation: true}}
