@@ -4,14 +4,17 @@
   {% if page.path contains '_en' %}
   <link rel="alternate" href="{{ page.url | replace_first: '/', '/es/' | prepend: site.baseurl | prepend: site.url }}" hreflang="es" />
   <link rel="alternate" href="{{ page.url | replace_first: '/', '/fr/' | prepend: site.baseurl | prepend: site.url }}" hreflang="fr" />
+  <link rel="alternate" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" hreflang="en" />
   {% endif %}
   {% if page.path contains '_es' %}
   <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/' | prepend: site.baseurl | prepend: site.url }}" hreflang="en" />
   <link rel="alternate" href="{{ page.url | replace_first: '/es/', '/fr/' | prepend: site.baseurl | prepend: site.url }}" hreflang="fr" />
+  <link rel="alternate" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" hreflang="es" />
   {% endif %}
   {% if page.path contains '_fr' %}
   <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/' | prepend: site.baseurl | prepend: site.url }}" hreflang="en" />
   <link rel="alternate" href="{{ page.url | replace_first: '/fr/', '/es/' | prepend: site.baseurl | prepend: site.url }}" hreflang="es" />
+  <link rel="alternate" href="{{ page.url | prepend: site.baseurl | prepend: site.url }}" hreflang="fr" />
   {% endif %}
 
   {% include head.html %}
